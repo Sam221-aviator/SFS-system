@@ -16,10 +16,10 @@ mkdir -p build
 nasm src/main.asm -f bin -o build/main.bin
 cp build/main.bin build/main_floppy.iso
 truncate -s 1440k build/main_floppy.iso
-```bash
+```
 
 To run the operating system, run this command.
 
 ```bash
 qemu-system-i386 -fda build/main_floppy.iso
-```bash
+```
